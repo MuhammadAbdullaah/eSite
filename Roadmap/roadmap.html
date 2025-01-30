@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruby on Rails E-Commerce Roadmap</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .week {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #e0e0e0;
+            border-left: 5px solid #007BFF;
+            border-radius: 5px;
+        }
+        h2 {
+            color: #007BFF;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .section {
+            margin-top: 30px;
+            padding: 15px;
+            background: #dff0d8;
+            border-left: 5px solid #28a745;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ruby on Rails E-Commerce Full Guide</h1>
+        
+        <div class="week">
+            <h2>Week 1: Project Setup & Authentication</h2>
+            <ul>
+                <li>Install Ruby on Rails and PostgreSQL</li>
+                <li>Initialize a new Rails project</li>
+                <li>Setup Devise for authentication (Login, Signup, Logout)</li>
+                <li>Create user roles (Admin, Customer)</li>
+                <li>Design database schema for Users and Roles</li>
+            </ul>
+        </div>
+        
+        <div class="week">
+            <h2>Week 2: Product & Category Management</h2>
+            <ul>
+                <li>Create Category model (Gold, Silver, Iron Rings, etc.)</li>
+                <li>Create Product model (name, price, description, image, stock, category_id)</li>
+                <li>CRUD operations for products and categories</li>
+                <li>Implement product filtering by category</li>
+            </ul>
+        </div>
+
+        <div class="week">
+            <h2>Week 3: Cart, Checkout & Payments</h2>
+            <ul>
+                <li>Implement Cart model (Session-based for guests, Database for logged-in users)</li>
+                <li>Add items to cart, update quantity, remove items</li>
+                <li>Order model with status tracking</li>
+                <li>Integrate Stripe for secure payments</li>
+                <li>Send order confirmation email</li>
+            </ul>
+        </div>
+
+        <div class="week">
+            <h2>Week 4: Admin Panel, Testing & Deployment</h2>
+            <ul>
+                <li>Create an Admin Panel for managing products, categories, and orders</li>
+                <li>Implement RSpec for automated testing</li>
+                <li>Optimize performance and SEO</li>
+                <li>Deploy on Heroku or VPS</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>💡 Additional Features</h2>
+            <ul>
+                <li>Wishlist for users to save favorite products</li>
+                <li>Customer reviews and ratings for products</li>
+                <li>Order tracking system</li>
+                <li>Discount coupon system</li>
+                <li>Multi-language support</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
