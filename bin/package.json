@@ -1,0 +1,22 @@
+{
+  "name": "bin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MuhammadAbdullaah/eSite.git"
+  },
+  "private": true,
+
+  "scripts": {
+    "build": "esbuild app/javascript/application.js --bundle --sourcemap --outdir=app/assets/builds",
+    "build:css": "tailwindcss -i app/assets/stylesheets/application.css -o app/assets/builds/application.css",
+    "watch": "esbuild app/javascript/application.js --bundle --sourcemap --outdir=app/assets/builds --watch"
+  }
+}
+
+
