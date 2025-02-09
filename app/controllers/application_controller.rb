@@ -1,4 +1,12 @@
 class ApplicationController < ActionController::Base
-  # Only allow modern browsers supporting webp images, web push, badges, import maps, CSS nesting, and CSS :has.
-  allow_browser versions: :modern
+
+  before_action do
+    RequestInfo.init(
+      user: current_user,
+      country: current_user&.country,
+      language: current_user&.language,
+      currency: current_user&.currency_preferences
+    )
+  end
+
 end
