@@ -1,8 +1,7 @@
 module RequestInfo
 
   #Per Request Data storage
-  def self.init(country:, currency:, user:, language:)
-    RequestStore.store[:country] = country
+  def self.init(currency:, user:, language:)
     RequestStore.store[:currency] = currency
     RequestStore.store[:language] = language
     RequestStore.store[:user] = user
@@ -12,9 +11,6 @@ module RequestInfo
     RequestStore.store[attr.to_sym]
   end
 
-  def self.current_country
-    get :country
-  end
 
   def self.current_currency
     get :currency
